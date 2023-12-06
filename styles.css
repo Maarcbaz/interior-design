@@ -5,7 +5,6 @@ body {
     box-sizing: border-box;
     min-height: 100vh;
     display: flex;
-    background-color: red;
     flex-direction: column;
 }
 
@@ -28,7 +27,7 @@ html {
 
 
 .side__nav {
-    width: 250px;
+    width: 0;
     background-color: var(--BLUE-BLACK-DARK);
     height: 100vh;
     position: fixed;
@@ -50,12 +49,15 @@ html {
 
 .opeen {
     position: relative;
-    right: -93%;
+    /* right: -93%; */
     top: 20px;
     cursor: pointer;
     font-size: 40px;
 }
 
+#topNav {
+    display: none;
+}
 .side__nav .close {
     position: absolute;
     top: 18px;
@@ -114,7 +116,11 @@ html {
     color: var(--WHITE);
     background-color: var(--BLUE-BLACK-DARKER);
 }
-
+/* MAIN  */
+.main__logo {
+    font-size: 2rem;
+    font-family: cursive;
+}
 @media screen and (max-width: 768px) {
 
     .side__nav,
