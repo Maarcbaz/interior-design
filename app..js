@@ -17,7 +17,6 @@ function closeNav() {
     header.style.display = 'none'
 
     list.style.display = 'none'
-
 }
 
 const overlay = document.getElementById('myNav')
