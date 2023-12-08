@@ -49,7 +49,6 @@ html {
 
 .opeen {
     position: relative;
-    /* right: -93%; */
     top: 20px;
     cursor: pointer;
     font-size: 40px;
@@ -70,14 +69,12 @@ html {
 
 .overlay .closee {
     position: absolute;
-
     top: 18px;
     left: 224px;
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--WHITE);
 }
-
 .side__nav ul li a {
     text-decoration: none;
     color: var(--WHITE);
@@ -133,8 +130,10 @@ html {
         display: block;
     }
 
+   
+
     .overlay {
-        width: 250px;
+        width: 0;
         background-color: var(--BLUE-BLACK-DARK);
         height: 100vh;
         position: fixed;
@@ -157,10 +156,10 @@ html {
 
     .open {
         position: relative;
-        right: -83%;
         top: 15px;
         cursor: pointer;
         font-size: 40px;
+        margin-left: 90%;
     }
 
     .overlay .closee {
@@ -206,7 +205,9 @@ html {
         color: var(--WHITE);
         background-color: var(--BLUE-BLACK-DARKER);
     }
-
-
-
+}
+@media screen and (max-width: 560px) {
+    .open {
+        margin-left: 83%;
+    }
 }

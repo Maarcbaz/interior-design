@@ -8,7 +8,6 @@ function openNav() {
     list.style.display = 'block'
     nav.style.display = 'block'
     header.style.display = 'block'
-    
 
 }
 
