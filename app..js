@@ -6,16 +6,10 @@ const list = document.getElementById('list')
 function openNav() {
     nav.style.width = '250px';
     list.style.display = 'block'
-    nav.style.display = 'block'
-    header.style.display = 'block'
-
 }
 
 function closeNav() {
     nav.style.width = '0'
-    header.style.display = 'none'
-
-    list.style.display = 'none'
 }
 
 const overlay = document.getElementById('myNav')
@@ -29,8 +23,5 @@ function openNa() {
 function closeNa() {
     overlay.style.width = '0'
     hList.style.display = 'none'
-    
-
     hList.style.display = 'none'
-
 }

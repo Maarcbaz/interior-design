@@ -36,9 +36,9 @@ html {
     top: 0;
     left: 0;
     z-index: 1;
+    overflow-x: hidden;
     transition: .5s;
 }
-
 
 .side__nav ul {
     margin-top: -1px !important;
@@ -54,27 +54,16 @@ html {
     font-size: 40px;
 }
 
-#topNav {
-    display: none;
-}
 .side__nav .close {
     position: absolute;
-    top: 18px;
-    right: 16px;
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: var(--WHITE);
-}
 
-
-.overlay .closee {
-    position: absolute;
     top: 18px;
     left: 224px;
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--WHITE);
 }
+
 .side__nav ul li a {
     text-decoration: none;
     color: var(--WHITE);
@@ -90,7 +79,7 @@ html {
 }
 
 .side__nav li a:hover {
-    padding-left: 55px;
+    padding-inline: 60px;
 }
 
 .side__nav li {
@@ -113,11 +102,13 @@ html {
     color: var(--WHITE);
     background-color: var(--BLUE-BLACK-DARKER);
 }
+
 /* MAIN  */
 .main__logo {
     font-size: 2rem;
     font-family: cursive;
 }
+
 @media screen and (max-width: 768px) {
 
     .side__nav,
@@ -130,7 +121,7 @@ html {
         display: block;
     }
 
-   
+
 
     .overlay {
         width: 0;
@@ -206,6 +197,7 @@ html {
         background-color: var(--BLUE-BLACK-DARKER);
     }
 }
+
 @media screen and (max-width: 560px) {
     .open {
         margin-left: 83%;
