@@ -2,14 +2,22 @@
 const nav = document.getElementById('topNav')
 const header = document.getElementById('logo')
 const list = document.getElementById('list')
-
+const main = document.getElementById('main')
 function openNav() {
-    nav.style.width = '250px';
+    nav.style.width = '220px';
     list.style.display = 'block'
+    // main.style.width = `min(100% - 28vw)`
+    // main.style.marginInlineStart  = "auto"
+    main.style.marginLeft = "240px"
 }
 
 function closeNav() {
+    main.style.paddingLeft = "0"
     nav.style.width = '0'
+    main.style.marginLeft = "40px"
+
+    // main.style.width = `min(100% - 9vw)`
+
 }
 
 const overlay = document.getElementById('myNav')
